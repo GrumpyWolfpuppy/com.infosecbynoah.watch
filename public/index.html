@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="right">
+                <img id="logo" src="" alt="">
+            </div>
+            <div id="left">
+                <div id="menu">
+                    <div class="menu-item">
+                        <a id="Home" href="./index.html">
+                            <p>Home</p>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a id="watch-now-nav" href="https://watch.infosecbynoah.com">
+                            <p>Watch Now</p>
+                        </a>
+                        <i class="fa-solid fa-circle-play"></i> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home-hero" class="home-section" data-parallax="scroll" data-image-src="./src/assets/images/hero-home.png">
+        <h1 id="home-hero-title">Custom curated movies and music</h1>
+        <a id="watch-now" href="https://watch.infosecbynoah.com">
+            <div id="button">
+                <p>Watch Now</p>
+            </div>
+        </a>
+        <div class="custom-shape-divider-bottom-1649046055">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
+    <script>
+        // Get the current year
+        function getYear() {
+            const date = new Date();
+            return date.getFullYear();
+        };
+
+        // Set the Copyright year in the footer equal to the year returned by getYear();
+        function setCopyrightYear(){
+            document.getElementById("copyright").innerHTML = `Copyright ${getYear()} | Noah Caldwell`
+        };
+
+        // Call the setCopyrightYear function
+        setCopyrightYear();   
+    </script>
+</body>
+</html>
